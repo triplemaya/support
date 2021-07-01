@@ -1,2 +1,3 @@
-# support
-Any Thoth related support questions
+# ℹ️ Support 
+
+🆘 Any Thoth related support questions
