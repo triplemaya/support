@@ -1,0 +1,29 @@
+name: Report package issues
+description: File an issue specific for a package
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        This bug report is used to report issues with packages and helps to
+        create better Thoth recommendations. Please fill in the package name
+        and describe issues you are experiencing with the given package.
+
+  - type: input
+    id: package_name
+    attributes:
+      label: Package name
+      description: Package to be blocked in resolutions or known to have issues
+      placeholder: flask
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: What is the issue with the given package?
+    validations:
+      required: true
