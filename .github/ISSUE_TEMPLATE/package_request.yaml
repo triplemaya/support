@@ -1,0 +1,30 @@
+name: Request package in recommendations
+description: Ask for including a package in recommendations
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+
+        Thoth gathers various metrics and metadata about packages to have them
+        available in resolver's recommendations to users. This report allows
+        you to request analyses on a specific package that will then be
+        available to Thoth users.
+
+  - type: input
+    id: package_name
+    attributes:
+      label: Package name
+      description: Package to be analysed and available in resolver's recommendations
+      placeholder: flask
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Give us a reason to include the given package in recommendations
+    validations:
+      required: true
