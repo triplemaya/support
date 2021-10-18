@@ -4,7 +4,7 @@ labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: |
+      value: >-
         Thanks for taking the time to fill out this report!
 
         Thoth gathers various metrics and metadata about packages to have them
