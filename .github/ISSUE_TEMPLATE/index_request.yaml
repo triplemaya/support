@@ -1,0 +1,30 @@
+name: Request monitoring a Python package index
+description: Ask for monitoring a package index in Thoth
+labels: [triage]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thanks for taking the time to fill out this report!
+
+        Thoth monitors Python package indexes and Python packages published.
+        This report allows you to request monitoring a specific package
+        index. **Note:** the package indexes on the Red Hat's Pulp index are
+        automatically monitored.
+
+  - type: input
+    id: inndex_url
+    attributes:
+      label: Python package index URL
+      description: A Python package index to be monitored.
+      placeholder: https://pypi.org/simple
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Give us a reason to monitor the given Python package index.
+    validations:
+      required: true
