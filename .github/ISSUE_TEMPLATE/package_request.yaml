@@ -1,6 +1,12 @@
 name: Request package in recommendations
 description: Ask for including a package in recommendations
-labels: ["bug", "triage"]
+labels:
+  [
+    "triage",
+    "script:scripts/add_package.sh",
+    "task-type:bash",
+    "repo:workflow-helpers",
+  ]
 body:
   - type: markdown
     attributes:
@@ -36,4 +42,4 @@ body:
       label: Reason
       description: Give us a reason to include the given package in recommendations
     validations:
-      required: true
+      required: false
