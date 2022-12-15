@@ -1,8 +1,7 @@
-name: Request package in recommendations
+name: Request package to be added to Thoth's Knowledge Graph
 description: Ask for including a package in recommendations
 labels:
   [
-    "triage",
     "script:scripts/add_package.sh",
     "task-type:bash",
     "repo:workflow-helpers",
